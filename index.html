@@ -1,0 +1,328 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Tessellate by HTML5 UP</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-wide.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<section id="header" class="dark">
+				<header>
+					<h1>Make your nerdiness the most attractive thing about you.</h1>
+					<p>We used to be in your shoes — learn from fellow engineers the best way to talk to girls.</p>
+				</header>
+				<footer>
+					<a href="#first" class="button scrolly">Learn how to be an attractive nerd &darr;</a>
+				</footer>
+			</section>
+			
+			<section id="first" class="main">
+				<div class="content dark style1 featured">
+					<div class="container">
+						<div class="row">
+							<div class="4u">
+								<section>
+									<span class="feature-icon"><span class="icon fa-code"></span></span>
+									<header>
+										<h3>By developers for developers</h3>
+									</header>
+									<p>We went through the same thing you went through. We didn't have the best social skills, but we transformed ourselves into studly chick magnets with practice.</p>
+								</section>
+							</div>
+							<div class="4u">
+								<section>
+									<span class="feature-icon"><span class="icon fa-bolt"></span></span>
+									<header>
+										<h3>Develop confidence</h3>
+									</header>
+									<p>Gain the confidence you need to talk to girls, all without becoming a brogrammer. Learn to be tactful and express your interest without coming off as a creep or stalker.</p>
+								</section>
+							</div>
+							<div class="4u">
+								<section>
+									<span class="feature-icon"><span class="icon fa-heart"></span></span>
+									<header>
+										<h3>Develop romance</h3>
+									</header>
+									<p>Use our tried and true methods, you will find that dream girl and develop a passionate relationship with her.</p>
+								</secton>
+							</div>
+						</div>
+						<div class="row">
+							<div class="12u">
+								<footer>
+									<a href="#fourth" class="button scrolly">Reserve your spot for free</a>
+								</footer>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		
+			<section id="fourth" class="main">
+				<header>
+					<div class="container">
+						<h2>Reserve a free spot in our upcoming classes</h2>
+						<p>Our classes run for 2 months. Class meets twice a week for 1 hour each session. <br>
+							We will teach you the basics of talking to girls, and then we will move on to more advanced tactics.<br>
+							<br>
+							We all know the ratio is horrible in San Francisco — sign up now and get an edge over the competition.</p>
+					</div>
+				</header>
+				<div class="content style4 featured">
+					<div class="container small">
+
+					    <form accept-charset="UTF-8" action="https://madmimi.com/signups/subscribe/118571" id="mad_mimi_signup_form" method="post" target="_blank" style="max-width: 300px; margin: 0 auto;">
+					       <div style="margin:0;padding:0;display:inline">
+					          <input name="utf8" type="hidden" value="✓"/>
+					       </div>
+					       <div class="mimi_field required">
+					          <label for="signup_email">Email*</label>
+					          <input id="signup_email" name="signup[email]" type="text" data-required-field="This field is required" placeholder="you@example.com"/>
+					       </div>
+					       <div>
+					       	  <br/>
+					          <label for="signup_phone">Phone (optional)</label>
+					          <input id="signup_phone" name="signup[phone]" type="text" data-required-field="This field is required"/>
+					       </div>
+					       <div>
+					       	  <br/>
+					          <input type="submit" class="submit" value="Subscribe" id="webform_submit_button" data-default-text="Subscribe" data-submitting-text="Sending..." data-invalid-text="↑ You forgot some required fields" data-choose-list="↑ Choose a list"></input>
+					       </div>
+					    </form>
+
+					</div>
+				</div>
+			</section>
+			
+		<!-- Footer -->
+			<section id="footer">
+				<!-- <ul class="icons">
+					<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+					<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+				</ul> -->
+				<div class="copyright">
+					<ul class="menu">
+						<li>&copy; Develop Her. All rights reserved.</li>
+					</ul>
+				</div>
+			</section>
+<script type="text/javascript">
+(function() {
+  var form = document.getElementById('mad_mimi_signup_form'),
+      submit = document.getElementById('webform_submit_button'),
+      validEmail = /.+@.+\..+/,
+      isValid;
+
+  form.onsubmit = function(event) {
+    validate();
+    if(!isValid) {
+      revalidateOnChange();
+      return false;
+    }
+  };
+
+  function validate() {
+    isValid = true;
+    emailValidation();
+    fieldAndListValidation();
+    updateFormAfterValidation();
+  }
+
+  function emailValidation() {
+    var email = document.getElementById('signup_email');
+    if(!validEmail.test(email.value)) {
+      textFieldError(email);
+      isValid = false;
+    } else {
+      removeTextFieldError(email);
+    }
+  }
+
+  function fieldAndListValidation() {
+    var fields = form.querySelectorAll('.mimi_field.required');
+    for(var i = 0; i < fields.length; ++i) {
+      var field = fields[i],
+          type  = fieldType(field);
+      if(type == 'checkboxes' || type == 'radio_buttons') {
+        checkboxAndRadioValidation(field);
+      } else {
+        textAndDropdownValidation(field, type);
+      }
+    }
+  }
+
+  function fieldType(field) {
+    var type = field.querySelectorAll('.field_type');
+    if(type.length > 0) {
+      return type[0].getAttribute('data-field-type');
+    } else if(field.className.indexOf('checkgroup') >= 0) {
+      return 'checkboxes';
+    } else {
+      return 'text_field';
+    }
+  }
+
+  function checkboxAndRadioValidation(field) {
+    var inputs   = field.getElementsByTagName('input'),
+        selected = false;
+    for(var i = 0; i < inputs.length; ++i) {
+      var input = inputs[i];
+      if((input.type == 'checkbox' || input.type == 'radio') && input.checked) selected = true;
+    }
+    if(selected) {
+      field.className = field.className.replace(/ invalid/g, '');
+    } else {
+      if(field.className.indexOf('invalid') == -1) field.className += ' invalid';
+      isValid = false;
+    }
+  }
+
+  function textAndDropdownValidation(field, type) {
+    var inputs = field.getElementsByTagName('input');
+    for(var i = 0; i < inputs.length; ++i) {
+      var input = inputs[i];
+      if(input.name.indexOf('signup') >= 0) {
+        if(type == 'text_field') {
+          textValidation(input);
+        } else {
+          dropdownValidation(field, input);
+        }
+      }
+    }
+    htmlEmbedDropdownValidation(field);
+  }
+
+  function textValidation(input) {
+    if(input.id == 'signup_email') return;
+    var val = input.value;
+    if(val == '') {
+      textFieldError(input);
+      isValid = false;
+      return;
+    } else {
+      removeTextFieldError(input)
+    }
+  }
+
+  function dropdownValidation(field, input) {
+    var val = input.value;
+    if(val == '') {
+      if(field.className.indexOf('invalid') == -1) field.className += ' invalid';
+      onSelectCallback(input);
+      isValid = false;
+      return;
+    } else {
+      field.className = field.className.replace(/ invalid/g, '');
+    }
+  }
+
+  function htmlEmbedDropdownValidation(field) {
+    var dropdowns = field.querySelectorAll('.mimi_html_dropdown');
+    for(var i = 0; i < dropdowns.length; ++i) {
+      var dropdown = dropdowns[i],
+          val      = dropdown.value;
+      if(val == '') {
+        if(field.className.indexOf('invalid') == -1) field.className += ' invalid';
+        isValid = false;
+        dropdown.onchange = validate;
+        return;
+      } else {
+        field.className = field.className.replace(/ invalid/g, '');
+      }
+    }
+  }
+
+  function textFieldError(input) {
+    input.className   = 'required invalid';
+    input.placeholder = input.getAttribute('data-required-field');
+  }
+
+  function removeTextFieldError(input) {
+    input.className   = 'required';
+    input.placeholder = '';
+  }
+
+  function onSelectCallback(input) {
+    if(typeof Widget != 'undefined' && Widget.BasicDropdown != undefined) {
+      var dropdownEl = input.parentNode,
+          instances  = Widget.BasicDropdown.instances;
+      for(var i = 0; i < instances.length; ++i) {
+        var instance = instances[i];
+        if(instance.wrapperEl == dropdownEl) {
+          instance.onSelect = validate;
+        }
+      }
+    }
+  }
+
+  function updateFormAfterValidation() {
+    form.className   = setFormClassName();
+    submit.value     = submitButtonText();
+    submit.disabled  = !isValid;
+    submit.className = isValid ? 'submit' : 'disabled';
+  }
+
+  function setFormClassName() {
+    var name = form.className;
+    if(isValid) {
+      return name.replace(/\s?mimi_invalid/, '');
+    } else {
+      if(name.indexOf('mimi_invalid') == -1) {
+        return name += ' mimi_invalid';
+      } else {
+        return name;
+      }
+    }
+  }
+
+  function submitButtonText() {
+    var invalidFields = document.querySelectorAll('.invalid'),
+        text;
+    if(isValid || invalidFields == undefined) {
+      text = submit.getAttribute('data-default-text');
+    } else {
+      if(invalidFields.length > 1 || invalidFields[0].className.indexOf('checkgroup') == -1) {
+        text = submit.getAttribute('data-invalid-text');
+      } else {
+        text = submit.getAttribute('data-choose-list');
+      }
+    }
+    return text;
+  }
+
+  function revalidateOnChange() {
+    var fields = form.querySelectorAll(".mimi_field.required");
+    for(var i = 0; i < fields.length; ++i) {
+      var inputs = fields[i].getElementsByTagName('input');
+      for(var j = 0; j < inputs.length; ++j) {
+        inputs[j].onchange = validate;
+      }
+    }
+  }
+})();
+</script>
+
+
+
+
+	</body>
+</html>
